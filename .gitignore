@@ -1,1 +1,4 @@
 /images
+/web/*
+/logs/php/*
+/logs/nginx/*
