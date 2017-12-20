@@ -2,7 +2,7 @@ version: '3.1'
 
 services:
     web:
-        image: tadeurodrigues/nginx:alpine
+        image: tadeurodrigues/nginx:latest
         env_file:
             - ./config.env
         ports:
@@ -41,7 +41,7 @@ services:
             - back
 
     database:
-        image: percona:5.7.19
+        image: percona:5.7.20
         working_dir: /dump
         env_file:
             - ./config.env
